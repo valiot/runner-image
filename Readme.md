@@ -1,0 +1,17 @@
+Valiot's Self-hosted runner image
+
+The [default image](https://github.com/actions/actions-runner-controller/blob/master/docs/about-arc.md#software-installed-in-the-runner-image) comes very slim, we need to add some packages.
+
+Custom packages added
+- yarn
+- kubectl
+
+## Build and Push
+```bash
+docker buildx build -t ghcr.io/valiot/runner-image:latest . --platform=linux/amd64,linux/arm64 --push
+```
+
+Read more at:
+- https://github.com/actions/setup-node/issues/182
+- https://github.com/actions/runner-images
+- https://github.com/catthehacker/docker_images
