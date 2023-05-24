@@ -10,3 +10,6 @@ RUN sudo apt-get update -qq \
 RUN sudo curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/darwin/${TARGETARCH}/kubectl" \
   && sudo chmod +x ./kubectl \
   && sudo mv ./kubectl /usr/local/bin/kubectl
+
+# Install dependencies for Cypress https://docs.cypress.io/guides/continuous-integration/introduction#UbuntuDebian
+RUN sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb

@@ -5,6 +5,7 @@ The [default image](https://github.com/actions/actions-runner-controller/blob/ma
 Custom packages added
 - yarn
 - kubectl
+- [Cypress Dependencies](https://docs.cypress.io/guides/continuous-integration/introduction#UbuntuDebian)
 
 ## Build and Push
 ```bash
