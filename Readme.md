@@ -12,6 +12,8 @@ Custom packages added
 docker buildx build -t ghcr.io/valiot/runner-image:latest . --platform=linux/amd64,linux/arm64 --push
 ```
 
+If you have issues building the image try adding `--no-cache` to the docker command
+
 Read more at:
 - https://github.com/actions/setup-node/issues/182
 - https://github.com/actions/runner-images
