@@ -19,3 +19,5 @@ RUN sudo curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/releas
 RUN sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
 # Missing deps for Cypress
 RUN sudo apt-get install -y xdg-utils
+# Missing deps for GitHub CLI
+RUN sudo apt-get install -y hub
