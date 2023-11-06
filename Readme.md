@@ -7,9 +7,12 @@ Custom packages added
 - kubectl
 - [Cypress Dependencies](https://docs.cypress.io/guides/continuous-integration/introduction#UbuntuDebian)
 
+## Version
+1.0.0
+
 ## Build and Push
 ```bash
-docker buildx build -t ghcr.io/valiot/runner-image:latest . --platform=linux/amd64,linux/arm64 --push
+docker buildx build -t ghcr.io/valiot/runner-image:${version} . --platform=linux/amd64,linux/arm64 --push
 ```
 
 If you have issues building the image try adding `--no-cache` to the docker command

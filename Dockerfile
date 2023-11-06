@@ -1,3 +1,4 @@
+# 1.0.0
 FROM summerwind/actions-runner:latest
 ARG TARGETARCH
 ENV LANG "en_US.UTF-8"
