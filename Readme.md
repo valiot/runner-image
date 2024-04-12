@@ -8,7 +8,7 @@ Custom packages added
 - [Cypress Dependencies](https://docs.cypress.io/guides/continuous-integration/introduction#UbuntuDebian)
 
 ## Version
-1.1.0
+1.1.1
 
 ## Build and Push
 ```bash
