@@ -9,6 +9,9 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/so
 RUN sudo apt-get update -qq \
   && sudo apt-get install -y yarn
 
+# Install Azure cli
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
 # Get kubectl deb package and install
 RUN sudo curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/${TARGETARCH}/kubectl" \
   && sudo chmod +x ./kubectl \
