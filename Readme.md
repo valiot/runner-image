@@ -6,10 +6,12 @@ Custom packages added
 - yarn
 - azure cli
 - kubectl
+- gh
+- hub
 - [Cypress Dependencies](https://docs.cypress.io/guides/continuous-integration/introduction#UbuntuDebian)
 
 ## Version
-1.2.1
+1.3.0
 
 ## Build and Push
 ```bash
