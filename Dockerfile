@@ -1,7 +1,7 @@
 FROM summerwind/actions-runner:latest
 ARG TARGETARCH
-ENV LANG "en_US.UTF-8"
-ENV LC_TYPE "en_US.UTF-8"
+ENV LANG="en_US.UTF-8"
+ENV LC_TYPE="en_US.UTF-8"
 
 RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | sudo apt-key add -
 RUN echo "deb https://deb.nodesource.com/node_20.x $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/nodesource.list
