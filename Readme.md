@@ -9,9 +9,11 @@ Custom packages added
 - gh
 - hub
 - [Cypress Dependencies](https://docs.cypress.io/guides/continuous-integration/introduction#UbuntuDebian)
+- python3
+- python3-pip
 
 ## Version
-1.4.1
+1.5.0
 
 ## Build and Push
 ```bash
