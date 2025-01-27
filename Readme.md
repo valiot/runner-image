@@ -11,9 +11,10 @@ Custom packages added
 - [Cypress Dependencies](https://docs.cypress.io/guides/continuous-integration/introduction#UbuntuDebian)
 - python3
 - python3-pip
+- poetry
 
 ## Version
-1.5.0
+1.6.0
 
 ## Build and Push
 ```bash

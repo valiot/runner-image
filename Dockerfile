@@ -41,3 +41,6 @@ RUN (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y
 
 # install python and pipx
 RUN sudo apt-get install -y python3 python3-pip
+
+# install poetry
+RUN pip3 install poetry
