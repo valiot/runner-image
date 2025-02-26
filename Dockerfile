@@ -30,6 +30,9 @@ RUN sudo apt-get install -y xdg-utils
 # Missing deps for GitHub CLI
 RUN sudo apt-get install -y hub
 
+# Install postgresql client
+RUN sudo apt-get install -y postgresql-client
+
 # Install GitHub CLI
 RUN (type -p wget >/dev/null || (sudo apt update && sudo apt-get install wget -y)) \
   && sudo mkdir -p -m 755 /etc/apt/keyrings \
