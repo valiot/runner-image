@@ -17,12 +17,12 @@ Custom packages added
 
 ## Version
 
-1.7.0
+1.7.1
 
 ## Build and Push
 
 ```bash
-export version=1.7.0
+export version=1.7.1
 docker buildx build --no-cache -t ghcr.io/valiot/runner-image:${version} -t ghcr.io/valiot/runner-image:latest . --platform=linux/amd64,linux/arm64 --push
 ```
 
